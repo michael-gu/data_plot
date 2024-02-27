@@ -31,7 +31,6 @@ features = [
 
 # colors = ['grey', 'grey', 'grey', 'grey', 'grey', 'grey']
 colors = ['#b8b8b8', '#1a80bb', '#8cc5e3']
-combined_colors = ['blue', 'orange', 'green', 'red', 'purple', 'brown']
 
 for i, feature in enumerate(features[:-1], 1):
     fig, ax = plt.subplots(figsize=(6, 5))
@@ -61,7 +60,8 @@ for i, feature in enumerate(features[:-1], 1):
     
     plt.savefig(f'{arg}_{i}.svg', format='svg')
     plt.show()
-    
+
+combined_colors = ['blue', 'orange', 'green', 'red', 'purple', 'brown']    
 
 fig, ax = plt.subplots(figsize=(6, 5))
 feature = features[-1]
